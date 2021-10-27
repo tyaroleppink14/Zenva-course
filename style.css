@@ -76,3 +76,16 @@ padding: 0px 16px;
 .single-service p {
     padding: 0px 16px;
 }
+
+@media screen and (min-width: 700px){
+    .nav ul {
+        text-align: right;
+    }
+
+    .nav ul li{
+        display: inline-block;
+        border-bottom: 0px;
+        border-left: 1px solid black;
+        text-align: left;
+    }
+}
