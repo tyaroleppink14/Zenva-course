@@ -15,6 +15,7 @@ body {
     margin: 0px;
     padding: 0px;
     list-style-type: none;
+    font-size: 0px;
 }
 
 .nav ul li {
@@ -29,6 +30,10 @@ body {
     background-color: black;
 }
 
+.nav li a {
+    text-decoration: none;
+    color: white;
+}
 /*style the div class 'image area'*/
 .image-area {
     background-image: url("Images/Background.png");
@@ -77,15 +82,24 @@ padding: 0px 16px;
     padding: 0px 16px;
 }
 
+/*using media queries for responsive design*/
 @media screen and (min-width: 700px){
+    /*align the Top Menu to the right*/
     .nav ul {
         text-align: right;
     }
 
+    /*change the display of each menu item*/
     .nav ul li{
         display: inline-block;
         border-bottom: 0px;
         border-left: 1px solid black;
         text-align: left;
+    }
+
+    /*change how services are arranged*/
+    .single-service {
+        width: 50%;
+        float: left;
     }
 }
